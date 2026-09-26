@@ -1,0 +1,119 @@
+:root {
+  --bg: #f3f5f8;
+  --ink: #1c2430;
+  --accent: #0b5cab;
+  --panel: #ffffff;
+  --line: #d9e2ec;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "IBM Plex Sans", "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(1200px 500px at 10% -10%, #d7e7fb 0%, transparent 55%),
+    radial-gradient(900px 400px at 100% 0%, #e8eef6 0%, transparent 50%),
+    var(--bg);
+}
+
+.app-shell {
+  min-height: 100vh;
+  background: transparent;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #0b3d75, #0b5cab) !important;
+  padding: 0 24px;
+}
+
+.brand {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+}
+
+.app-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 16px 40px;
+}
+
+.compliance-banner {
+  margin-bottom: 16px;
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  box-shadow: 0 8px 24px rgba(15, 40, 80, 0.04);
+}
+
+.condition-card {
+  margin-bottom: 10px;
+  background: #f8fbff;
+}
+
+.app-footer {
+  text-align: center;
+  color: #5b6b7c;
+  background: transparent;
+}
+
+.pre-block {
+  white-space: pre-wrap;
+  margin: 0;
+  font-family: "IBM Plex Mono", Consolas, monospace;
+  font-size: 12px;
+}
+
+.chat-box {
+  margin-top: 8px;
+  max-height: 220px;
+  overflow-y: auto;
+  padding: 8px;
+  background: #f7f9fc;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+
+.chat-bubble {
+  margin-bottom: 8px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.chat-user {
+  background: #e8f1fb;
+  margin-left: 24px;
+}
+
+.chat-assistant {
+  background: #fff;
+  border: 1px solid var(--line);
+  margin-right: 24px;
+}
+
+.chat-system {
+  background: transparent;
+  color: #5b6b7c;
+  font-size: 12px;
+}
+
+.chat-role {
+  font-size: 11px;
+  color: #6b7c8f;
+  margin-bottom: 2px;
+}
